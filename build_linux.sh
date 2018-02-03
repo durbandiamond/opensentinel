@@ -8,20 +8,6 @@ ps axjf
 echo $1
 
 #################################################################
-# Raspberry Pi notes                                          #
-#################################################################
-# Increase swap file size.
-#sudo nano /etc/dphys-swapfile
-#Set CONF_SWAPSIZE=1024 and save /etc/dphys-swapfile
-#sudo dphys-swapfile setup
-#sudo dphys-swapfile swapon
-
-#################################################################
-# Update Ubuntu and install prerequisites                     #
-#################################################################
-#sudo apt-get update
-
-#################################################################
 # Build from source                                           #
 #################################################################
 NPROC=$(nproc)
@@ -53,7 +39,7 @@ cd deps
 # ASIO
 ##
 
-wget "https://pilotfiber.dl.sourceforge.net/project/asio/asio/1.10.8%20%28Stable%29/asio-1.10.8.tar.gz"
+wget --no-check-certificate "https://pilotfiber.dl.sourceforge.net/project/asio/asio/1.10.8%20%28Stable%29/asio-1.10.8.tar.gz"
 tar -xzf asio-1.10.8.tar.gz
 rm -rf asio-1.10.8.tar.gz
 mv asio-1.10.8 asio
