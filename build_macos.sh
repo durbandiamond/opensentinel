@@ -16,7 +16,7 @@ cd deps
 # ASIO
 ##
 
-curl -L -O "https://pilotfiber.dl.sourceforge.net/project/asio/asio/1.10.8%20%28Stable%29/asio-1.10.8.tar.gz"
+curl -L -O --insecure "https://pilotfiber.dl.sourceforge.net/project/asio/asio/1.10.8%20%28Stable%29/asio-1.10.8.tar.gz"
 tar -xzf asio-1.10.8.tar.gz
 rm -rf asio-1.10.8.tar.gz
 mv asio-1.10.8 asio
