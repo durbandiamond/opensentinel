@@ -14,6 +14,14 @@ Although Boost is not used it is required for the Boost.Build system (bjam). As 
 
  * MacOS - git pull and run ./build_macos.sh
 
+## Using
+
+Open Sentinel uses the `system` call to execute a user defined script when a threat is detected. The examples directory contains a script that works with the [pushd](https://pushed.co) service.
+
+Open Sentinel MUST be run as root on Posix compliant systems and Administrator on Windows systems.
+
+To test your Open Sentinel setup simply point your favorite `LAN scanner` at it or send a UDP packet(`echo -n "hello" >/dev/udp/192.168.1.16/8100`) or connect with your `web browser` to one of the passive ports such as 8100.
+
 ## Collaboration
 
 All contributions, big or small, are welcome. You are welcome to contribute to this project with whatever level of contribution you are comfortable with. We have no expectations for the amount or frequency of contributions from anyone.
