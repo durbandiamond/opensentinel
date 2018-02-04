@@ -4,7 +4,7 @@ Open Sentinel comparison against the MGT Sentinel device.
 
 |   |   |   |
 |:-:|:-:|:-:|
-|  | [MGT Captial Investments Sentinel](https://mgtci.com/content/products/sentinel/index.html) | [Open Sentinel](https://opensentinel.org)  |
+|  | [MGT Captial Investments Sentinel](http://mgtci.com/content/products/sentinel/index.html) | [Open Sentinel](http://opensentinel.org)  |
 | Open Source | No  |  Yes |
 | Works Offline  | ? | Yes |
 | Subscription Required  | Yes | No |
