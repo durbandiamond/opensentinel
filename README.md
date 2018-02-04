@@ -10,15 +10,15 @@ It is coded in C++11 and runs on most platforms and devices.
 
 Although Boost is not used it is required for the Boost.Build system (bjam). As C++17 is being supported on more compilers we will be adopting std::filesystem, etc instead of using Boost moving forward. Asio will continue to be used until C++20 which will include native support.
 
- * Linux - git pull and run ./build_linux.sh
+ * Linux - Run ./build_linux.sh
 
- * MacOS - git pull and run ./build_macos.sh
+ * MacOS - Run ./build_macos.sh
 
 ## Using
 
-Open Sentinel uses the `system` call to execute a user defined script when a threat is detected. The examples directory contains a script that works with the [pushd](https://pushed.co) service.
+Open Sentinel uses the `system` call to execute a user defined script when a threat is detected. The examples directory contains a script that works with the [pushd](https://pushed.co) service. The script MUST be located in the current users data directory. On Linux this would be `~/.opensentinel/data/` and on MacOS this would be `~/Library/Application Support/opensentinel/`.
 
-Open Sentinel MUST be run as root on Posix compliant systems and Administrator on Windows systems.
+Open Sentinel MUST be run as root on Unix-like systems and Administrator on Windows systems.
 
 To test your Open Sentinel setup simply point your favorite `LAN scanner` at it or send a UDP packet(`echo -n "hello" >/dev/udp/192.168.1.16/8100`) or connect with your `web browser` to one of the passive ports such as 8100.
 
