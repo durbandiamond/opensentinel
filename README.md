@@ -16,7 +16,7 @@ Although Boost is not used it is required for the Boost.Build system (bjam). As 
 
 ## Using
 
-Open Sentinel uses the `system` call to execute a user defined script when a threat is detected. The examples directory contains a script that works with the [pushd](https://pushed.co) service. The script MUST be located in the current users data directory. On Linux this would be `~/.opensentinel/data/` and on MacOS this would be `~/Library/Application Support/opensentinel/`.
+Open Sentinel uses the `system` call to execute a user defined script when a threat is detected. The examples directory contains a script that works with the [pushd](https://pushed.co) service. The script MUST be located in the current users data directory. On Linux this would be `~/.opensentinel/data/` and on MacOS this would be `~/Library/Application Support/opensentinel/`. The script MUST be named `threat_alert.sh` but can be changed if need be.
 
 Open Sentinel MUST be run as root on Unix-like systems and Administrator on Windows systems.
 
