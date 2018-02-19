@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2014-2017 BM-2cVZag8xxXdPC9BsLewmUotg6TBB8T2yTk
+ * Copyright (c) 2017-2018 Durban & Diamond, LLC.
  *
- * This file is part of libCoin.
+ * This file is part of Open Sentinel.
  *
- * libCoin is free software: you can redistribute it and/or modify
+ * Open Sentinel is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -50,10 +50,11 @@ static int _mkdir(const char * path)
 static int _mkdir(const char * dir)
 {
     char tmp[256];
-    char * p = NULL;
+    char * p = nullptr;
     size_t len;
  
     snprintf(tmp, sizeof(tmp),"%s",dir);
+    
     len = strlen(tmp);
     
     if (tmp[len - 1] == '/')
